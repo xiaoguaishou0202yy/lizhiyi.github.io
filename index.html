@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhiyi Li - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Zhiyi Li</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zhiyi Li - Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+       
+    </head>
+    <body>
+        <header>
+            <h1>Zhiyi Li</h1>
+        </header>
 
-    <section class="intro">
-        <h2>WELCOME TO MY PORTFOLIO</h2>
-        <p>BELOW YOU CAN FIND A SELECTION OF SOME OF MY MAPS</p>
-    </section>
+        <section class="intro">
+            <h2>WELCOME TO MY PORTFOLIO</h2>
+            <p>BELOW YOU CAN FIND A SELECTION OF SOME OF MY MAPS</p>
+        </section>
 
-    <section class="portfolio">
-        <div class="map">
-            <img src="path/to/your/image.png" alt="Map Image">
-        </div>
-        <!-- Add more map images or portfolio items here -->
-    </section>
+        <section class="portfolio">
+            <div class="subtitle1"> Print Cartography</div>
 
-    <script src="script.js"></script>
-</body>
+            <div class="map">
+                <img src="img/Info.png" alt="Info Map on California Wildfires" onclick="openModal('Info')"> 
+                <p>California Wildfires in the 21st Century</p>      
+            </div>
+  
+            
+            <!-- Modal for Full Image -->
+            <div id="Info" class="modal" onclick="closeModal('Info')">
+                <div class="modal-body">
+                    <img class="modal-content" id="info">
+                    <!-- Zoom controls -->
+                    <div class="zoom-controls">
+                        <button id="zoomIn" class="zoom-btn">Zoom In</button>
+                        <button id="zoomOut" class="zoom-btn">Zoom Out</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="map">
+                <img src="img/911_Call.png" alt="911 Call Incident Map"> 
+                <p>911 Call Incident Map</p>      
+            </div>
+            <div class="map">
+                <img src="img/SD_Crime.png" alt="San Diego Crime Map Visualization"> 
+                <p>San Diego Crime Map Visualization</p>                 
+            </div>
+            <div class="map">
+                <img src="img/311_Incidents.png" alt="311 Incidents Reported Dashboard">                
+                <p>311 Incidents Reported Dashboard</p>
+            </div>
+
+            <div class="map">
+                <img src="img/Covid-19_Confirmed.png" alt="Covid-19 Confirmed Glabal">                
+                <p>Covid-19 Confirmed Glabal</p>
+            </div>
+
+            <div class="map">
+                <img src="img/FlightTracker.png" alt="FlightTracker Web App"> 
+                <p>FlightTracker Web App</p>               
+            </div>
+
+            <div class="map">
+                <img src="img/Madison_Crime.png" alt="Madison Crime Incident Map">                
+                <p>Madison Crime Incident Map</p>
+            </div>
+
+            <div class="map">
+                <img src="img/2017_US_Population.png" alt="2017 US Population">   
+                <p>311 Incidents Reported Dashboard</p>             
+            </div>
+            <!-- Add more map images or portfolio items here -->
+        </section>
+
+    </body>
+
+    <script src="js/main.js"></script>
+    <script type="javascript" src="lib/bootstrap.min.js"></script>
 </html>
