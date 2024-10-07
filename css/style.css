@@ -49,6 +49,7 @@ h1 {
     font-size: 1.8rem; /* Adjust the size as needed */
     color: #333333;     /* Dark grey text */
     text-align: center; /* Center align the subtitle */
+    margin-top: 1rem;
     margin-bottom: 1rem; /* Add spacing between the subtitle and the maps */
     font-weight: bold;   /* Make the subtitle bold */
     width: 100%;
