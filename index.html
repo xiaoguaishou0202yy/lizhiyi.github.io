@@ -22,7 +22,7 @@
             <div class="subtitle1"> Print Cartography</div>
 
             <div class="map">
-                <img src="img/Info.png" alt="Info Map on California Wildfires" onclick="openModal('Info')"> 
+                <img src="img/Info.png" alt="Info Map on California Wildfires" onclick="openModal('Info',src)"> 
                 <p>California Wildfires in the 21st Century</p>      
             </div>
   
@@ -30,14 +30,138 @@
             <!-- Modal for Full Image -->
             <div id="Info" class="modal" onclick="closeModal('Info')">
                 <div class="modal-body">
-                    <img class="modal-content" id="info">
-                    <!-- Zoom controls -->
-                    <div class="zoom-controls">
-                        <button id="zoomIn" class="zoom-btn">Zoom In</button>
-                        <button id="zoomOut" class="zoom-btn">Zoom Out</button>
+                    <img class="modal-content zoomable" id="info">
+
                     </div>
                 </div>
             </div>
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Job.png" alt="Find A Job In the U.S?" onclick="openModal('Job',src)">
+                <p>Find A Job In the U.S?</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Job" class="modal" onclick="closeModal('Job')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="job">
+                </div>
+            </div>
+
+
+<!--             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div class="caption">
+                    <div class="caption-content">
+                        <i class= "fa fa-search-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/Job.png" class="img-responsive" alt="">
+                <h4>Find A Job In the U.S?</h4>
+            </a>
+
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"></div>
+                        <div class="modal-body">
+                            <img class = "img-responsive" src = 'img/aks_divider.png' alt = "">
+                            <img src="img/Job.png" class="img-responsive img-centered" alt="">
+                        </div>
+                </div>
+            </div> -->
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Helm.png" alt="The Battle of Helm's Deep" onclick="openModal('Helm',src)">
+                <p>The Battle of Helm's Deep</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Helm" class="modal" onclick="closeModal('Helm')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="helm">
+                </div>
+            </div>
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/France_Atlas.png" alt="Frances Atlas" onclick="openModal('France',src)">
+                <p>Frances Atlas</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="France" class="modal" onclick="closeModal('France')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="france">
+                </div>
+            </div>
+
+            
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Africa.png" alt="Africa's Natural Geography" onclick="openModal('Africa',src)">
+                <p>Africa's Natural Geography</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Africa" class="modal" onclick="closeModal('Africa')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="africa">
+                </div>
+            </div>
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Alabama.png" alt="Alabama Football Teams" onclick="openModal('Alabama',src)">
+                <p>Alabama Football Teams</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Alabama" class="modal" onclick="closeModal('Alabama')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="alabama">
+                </div>
+            </div>
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Multivariate.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Multivariate',src)">
+                <p>Population Density and Unemployment Rate in U.S., 2018</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Multivariate" class="modal" onclick="closeModal('Multivariate')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="multivariate">
+                </div>
+            </div>
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Watershed.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Watershed',src)">
+                <p>Population Density and Unemployment Rate in U.S., 2018</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Watershed" class="modal" onclick="closeModal('Watershed')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="watershed">
+                </div>
+            </div>
+
+            <!-- New Job Card -->
+            <div class="map">
+                <img src="img/Poster.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Poster',src)">
+                <p>Population Density and Unemployment Rate in U.S., 2018</p>
+            </div>
+
+            <!-- Modal for Full Image of Job -->
+            <div id="Poster" class="modal" onclick="closeModal('Poster')">
+                <div class="modal-body">
+                    <img class="modal-content zoomable" id="poster">
+                </div>
+            </div>
+
 
 
             <div class="map">

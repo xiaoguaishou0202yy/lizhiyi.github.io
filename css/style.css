@@ -63,6 +63,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
+    height:max-content
 }
 
 .portfolio .map p {
@@ -99,7 +100,7 @@ h1 {
 
 @media (min-width: 1200px) {
     .portfolio .map {
-        width: 30%;
+        width: 20%;
     }
 }
 
@@ -120,17 +121,15 @@ h1 {
 /* Modal Content (the image) */
 .modal-content {
     margin: auto;
+    cursor: zoom-in;
     display: block;
     width: 80%;
     max-width: 700px;
     border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom transitions */
 }
 
-/* Add Animation */
-.modal-content {
-    animation-name: zoom;
-    animation-duration: 0.4s;
-}
+
 
 @keyframes zoom {
     from {transform: scale(0)} 
