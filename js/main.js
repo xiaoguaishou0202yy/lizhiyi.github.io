@@ -47,5 +47,3 @@ document.querySelectorAll('.zoomable').forEach(function (img) {
         img.style.cursor = currentScale > 1 ? 'move' : 'zoom-in';
     });
 });
-
-
