@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zhiyi Li - Portfolio</title>
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
        
     </head>
     <body>
@@ -47,10 +48,157 @@
         <section class="portfolio" id="portfolio">
             <div class="subtitle1"> Print Cartography</div>
 
-            <div class="map">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/Info.png" alt="Info Map on California Wildfires">
+                        <p>California Wildfires in the 21st Century</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Job.png" alt="Find A Job In the U.S?">
+                        <p>Find A Job in the U.S.?</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Helm.png" alt="The Battle of Helm's Deep" onclick="openModal('Helm',src)">
+                        <p>The Battle of Helm's Deep</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/France_Atlas.png" alt="Frances Atlas" onclick="openModal('France',src)">
+                        <p>Frances Atlas</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Africa.png" alt="Africa's Natural Geography" onclick="openModal('Africa',src)">
+                        <p>Africa's Natural Geography</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Alabama.png" alt="Alabama Football Teams" onclick="openModal('Alabama',src)">
+                        <p>Alabama Football Teams</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Multivariate.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Multivariate',src)">
+                        <p>Population Density and Unemployment Rate in U.S., 2018</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img/Watershed.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Watershed',src)">
+                        <p>Population Density and Unemployment Rate in U.S., 2018</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/Poster.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Poster',src)">
+                        <p>Population Density and Unemployment Rate in U.S., 2018</p>
+                    </div>
+                    <!-- other cards -->
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="subtitle1"> Web Cartography</div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="https://experience.arcgis.com/experience/42b7b423a945473093d514162dfb3f51/?org=UW-Mad" target="_blank">
+                            <img src="img/911_Call.png" alt="911 Call Incident Map">
+                        </a>
+                        <p>911 Call Incident Map</p>      
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://storymaps.arcgis.com/stories/c3e3fd50d3a5484fa0a425d20a74552d" target="_blank">
+                            <img src="img/Immigration.png" alt="Immigration in the U.S.">
+                        </a>
+                        <p>Immigration in the U.S.</p>      
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://xiaoguaishou0202yy.github.io/agolcollector/" target="_blank">
+                            <img src="img/Travel_Intention.png" alt="Travel Intentions Web App">
+                        </a>
+                        <p>Travel Intentions Web App</p>      
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://unageodept.maps.arcgis.com/apps/MapSeries/index.html?appid=58f929fa21fc460dbdde9ffbbb5c291c" target="_blank">
+                            <img src="img/SD_Crime.png" alt="San Diego Crime Analysis"> 
+                        </a>
+                        <p>San Diego Crime Analysis</p>                 
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://www.arcgis.com/apps/dashboards/9cdf59230d4d497c9ab9eb53686a0cb5" target="_blank">
+                            <img src="img/311_Incidents.png" alt="311 Incidents Reported Dashboard">
+                        </a>                
+                        <p>311 Incidents Reported Dashboard</p>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://storymaps.arcgis.com/stories/6f1bc9eeb6ba407eafcbf577bdd27882" target="_blank">
+                            <img src="img/Crime_Major_Cities.png" alt="Story of US Population and Crime Rate in Major cities">
+                        </a>                
+                        <p>Story of US Population and Crime Rate in Major cities</p>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://unageodept.maps.arcgis.com/apps/instant/slider/index.html?appid=26dd06680669465190f840a59cdc413b" target="_blank">
+                            <img src="img/Covid-19_Confirmed.png" alt="Covid-19 Confirmed Glabal">
+                        </a>                 
+                        <p>Covid-19 Confirmed Glabal</p>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://github.com/xiaoguaishou0202yy/flight_tracking?tab=readme-ov-file" target="_blank">
+                            <img src="img/FlightTracker.png" alt="FlightTracker Web App">   
+                        </a>   
+                        <p>FlightTracker Web App</p>               
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://xiaoguaishou0202yy.github.io/Madison-Crime-Incident-Map/" target="_blank">
+                            <img src="img/Madison_Crime.png" alt="Madison Crime Incident Map">  
+                        </a>                
+                        <p>Madison Crime Incident Map</p>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://experience.arcgis.com/experience/eb84a72952e64433912b065a09ba6d3b/" target="_blank">
+                            <img src="img/2017_US_Population.png" alt="Study of 2017 US Population">   
+                        </a>
+                        <p>Study of 2017 US Population</p>             
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://xiaoguaishou0202yy.github.io/unit-3/" target="_blank">
+                            <img src="img/Crime.png" alt="Violent Crime Rate in the United States, 2022">  
+                        </a>                
+                        <p>Violent Crime Rate in the United States, 2022</p>
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <a href="https://storymaps.arcgis.com/stories/2a0ec713805849258b0299d4f6231784" target="_blank">
+                            <img src="img/China.png" alt="Impression and Attractiveness of Some Cities in China">  
+                        </a>                
+                        <p>Impression and Attractiveness of Some Cities in China</p>
+                    </div>
+                    <!-- other cards -->
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+              
+
+<!--             <div class="map">
                 <img src="img/Info.png" alt="Info Map on California Wildfires" onclick="openModal('Info',src)"> 
                 <p>California Wildfires in the 21st Century</p>      
-            </div>
+            </div> -->
   
             
             <!-- Modal for Full Image -->
@@ -62,11 +210,10 @@
                 </div>
             </div>
 
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/Job.png" alt="Find A Job In the U.S?" onclick="openModal('Job',src)">
                 <p>Find A Job In the U.S?</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Job" class="modal" onclick="closeModal('Job')">
@@ -75,32 +222,10 @@
                 </div>
             </div>
 
-
-<!--             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                <div class="caption">
-                    <div class="caption-content">
-                        <i class= "fa fa-search-plus fa-3x"></i>
-                    </div>
-                </div>
-                <img src="img/Job.png" class="img-responsive" alt="">
-                <h4>Find A Job In the U.S?</h4>
-            </a>
-
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"></div>
-                        <div class="modal-body">
-                            <img class = "img-responsive" src = 'img/aks_divider.png' alt = "">
-                            <img src="img/Job.png" class="img-responsive img-centered" alt="">
-                        </div>
-                </div>
-            </div> -->
-
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/Helm.png" alt="The Battle of Helm's Deep" onclick="openModal('Helm',src)">
                 <p>The Battle of Helm's Deep</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Helm" class="modal" onclick="closeModal('Helm')">
@@ -109,11 +234,10 @@
                 </div>
             </div>
 
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/France_Atlas.png" alt="Frances Atlas" onclick="openModal('France',src)">
                 <p>Frances Atlas</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="France" class="modal" onclick="closeModal('France')">
@@ -122,12 +246,10 @@
                 </div>
             </div>
 
-            
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/Africa.png" alt="Africa's Natural Geography" onclick="openModal('Africa',src)">
                 <p>Africa's Natural Geography</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Africa" class="modal" onclick="closeModal('Africa')">
@@ -136,11 +258,10 @@
                 </div>
             </div>
 
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/Alabama.png" alt="Alabama Football Teams" onclick="openModal('Alabama',src)">
                 <p>Alabama Football Teams</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Alabama" class="modal" onclick="closeModal('Alabama')">
@@ -149,11 +270,10 @@
                 </div>
             </div>
 
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/Multivariate.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Multivariate',src)">
                 <p>Population Density and Unemployment Rate in U.S., 2018</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Multivariate" class="modal" onclick="closeModal('Multivariate')">
@@ -162,11 +282,10 @@
                 </div>
             </div>
 
-            <!-- New Job Card -->
-            <div class="map">
+<!--             <div class="map">
                 <img src="img/Watershed.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Watershed',src)">
                 <p>Population Density and Unemployment Rate in U.S., 2018</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Watershed" class="modal" onclick="closeModal('Watershed')">
@@ -174,12 +293,11 @@
                     <img class="modal-content zoomable" id="watershed">
                 </div>
             </div>
-
-            <!-- New Job Card -->
+<!-- 
             <div class="map">
                 <img src="img/Poster.png" alt="Population Density and Unemployment Rate in U.S., 2018" onclick="openModal('Poster',src)">
                 <p>Population Density and Unemployment Rate in U.S., 2018</p>
-            </div>
+            </div> -->
 
             <!-- Modal for Full Image of Job -->
             <div id="Poster" class="modal" onclick="closeModal('Poster')">
@@ -188,127 +306,73 @@
                 </div>
             </div>
 
-            <div class="subtitle1"> Web Cartography</div>
-
-
-
-            <div class="map">
-                <a href="https://experience.arcgis.com/experience/42b7b423a945473093d514162dfb3f51/?org=UW-Mad" target="_blank">
-                    <img src="img/911_Call.png" alt="911 Call Incident Map">
-                </a>
-                <p>911 Call Incident Map</p>      
-            </div>
-
-            <div class="map">
-                <a href="https://storymaps.arcgis.com/stories/c3e3fd50d3a5484fa0a425d20a74552d" target="_blank">
-                    <img src="img/Immigration.png" alt="Immigration in the U.S.">
-                </a>
-                <p>Immigration in the U.S.</p>      
-            </div>
-
-            <div class="map">
-                <a href="https://xiaoguaishou0202yy.github.io/agolcollector/" target="_blank">
-                    <img src="img/Travel_Intention.png" alt="Travel Intentions Web App">
-                </a>
-                <p>Travel Intentions Web App</p>      
-            </div>
-
-            <div class="map">
-                <a href="https://unageodept.maps.arcgis.com/apps/MapSeries/index.html?appid=58f929fa21fc460dbdde9ffbbb5c291c" target="_blank">
-                    <img src="img/SD_Crime.png" alt="San Diego Crime Analysis"> 
-                </a>
-                <p>San Diego Crime Analysis</p>                 
-            </div>
-
-            <div class="map">
-                <a href="https://www.arcgis.com/apps/dashboards/9cdf59230d4d497c9ab9eb53686a0cb5" target="_blank">
-                    <img src="img/311_Incidents.png" alt="311 Incidents Reported Dashboard">
-                </a>                
-                <p>311 Incidents Reported Dashboard</p>
-            </div>
-
-            <div class="map">
-                <a href="https://storymaps.arcgis.com/stories/6f1bc9eeb6ba407eafcbf577bdd27882" target="_blank">
-                    <img src="img/Crime_Major_Cities.png" alt="Story of US Population and Crime Rate in Major cities">
-                </a>                
-                <p>Story of US Population and Crime Rate in Major cities</p>
-            </div>
-
-            <div class="map">
-                <a href="https://unageodept.maps.arcgis.com/apps/instant/slider/index.html?appid=26dd06680669465190f840a59cdc413b" target="_blank">
-                    <img src="img/Covid-19_Confirmed.png" alt="Covid-19 Confirmed Glabal">
-                </a>                 
-                <p>Covid-19 Confirmed Glabal</p>
-            </div>
-
-            <div class="map">
-                <a href="https://github.com/xiaoguaishou0202yy/flight_tracking?tab=readme-ov-file" target="_blank">
-                    <img src="img/FlightTracker.png" alt="FlightTracker Web App">   
-                </a>   
-                <p>FlightTracker Web App</p>               
-            </div>
-
-            <div class="map">
-                <a href="https://xiaoguaishou0202yy.github.io/Madison-Crime-Incident-Map/" target="_blank">
-                    <img src="img/Madison_Crime.png" alt="Madison Crime Incident Map">  
-                </a>                
-                <p>Madison Crime Incident Map</p>
-            </div>
-
-            <div class="map">
-                <a href="https://experience.arcgis.com/experience/eb84a72952e64433912b065a09ba6d3b/" target="_blank">
-                    <img src="img/2017_US_Population.png" alt="Study of 2017 US Population">   
-                </a>
-                <p>Study of 2017 US Population</p>             
-            </div>
-
-            <div class="map">
-                <a href="https://xiaoguaishou0202yy.github.io/unit-3/" target="_blank">
-                    <img src="img/Crime.png" alt="Violent Crime Rate in the United States, 2022">  
-                </a>                
-                <p>Violent Crime Rate in the United States, 2022</p>
-            </div>
-
-            <div class="map">
-                <a href="https://storymaps.arcgis.com/stories/2a0ec713805849258b0299d4f6231784" target="_blank">
-                    <img src="img/China.png" alt="Impression and Attractiveness of Some Cities in China">  
-                </a>                
-                <p>Impression and Attractiveness of Some Cities in China</p>
-            </div>
             <!-- Add more map images or portfolio items here -->
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Originally from Suzhou, China, I have had passion for creating maps and conducting GIS analysis, particularly in the areas of natural disasters and urban health. I hold a Master’s degree in Cartography and Geographic Information Systems from the University of Wisconsin – Madison, where I developed expertise in spatial data analysis, geovisualization, and GIS programming. My research experience includes studying the impacts of natural disasters, as well as exploring urban health issues such as air quality and community safety.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>email</p>
-            <p>Phone</p>
-        </section>
+<!--         <section id="contact">
+            <form action="mailto:xiaoguaishou0202yy@gmail.com" method="POST" enctype="text/plain">
+                <div>
+                  <input type="text" id="name" name="name" placeholder="Name" required>
+                  <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+              </form>
+              
+        </section> -->
 
         <section id="resume">
             <h2>Resume</h2>
-            <h3>Education</h3>
-            <p>pass</p>
-            <h3>Work Experience</h3>
-            <p>pass</p>
-
-            <h2>SERVICES I OFFER</h2>
-            <div class="service">
-                <div class="service-number">01</div>
-                <div class="service-content">
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            
+            <div class="resume-section">
+                <div class="section-header">
+                    <i class="icon-experience"></i>
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="entry-details">
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>Lead Cartographer - GIS Specialist - GIS Technician - GIS Intern</h4>
+                            <p class="organization">Virginia Economic Development Partnership</p>
+                            <p>Specialize in GIS and Cartographic Presentation to attract jobs and investment to the Commonwealth of Virginia. Daily operations include: writing code to complete repetitive processes, creating static and interactive maps as marketing tools, and maintaining complex datasets and serving them out via an Open Data Portal.</p>
+                        </div>
+                        <div class="entry-date">AUGUST 2015 - PRESENT</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>Geoscience Interpreter - Intern</h4>
+                            <p class="organization">National Parks Service - Shenandoah National Park</p>
+                            <p>Planned and conducted interpretive programs for visitors to Shenandoah on a wide range of topics. Connected visitors to the resources.</p>
+                        </div>
+                        <div class="entry-date">MAY 2015 - AUGUST 2015</div>
+                    </div>
                 </div>
             </div>
-            <div class="service">
-                <div class="service-number">02</div>
-                <div class="service-content">
-                    <h3>WordPress Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+    
+            <div class="resume-section">
+                <div class="section-header">
+                    <i class="icon-education"></i>
+                    <h3>Education</h3>
+                </div>
+                <div class="entry-details">
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>M.S. in Cartography and Geographic Information System</h4>
+                            <p class="organization">University of Wisconsin - Madison</p>
+                            <p class="courses">GPA:4.0/4.0</p>
+                            <p class="courses">Cartography, GIS, Web and Mobile Programming (JavaScript, Python), Geodatabase, Remote Sensing</p>
+                        </div>
+                        <div class="entry-date">AUG 2024</div>
+                    </div>
+                    <div class="resume-entry">
+                        <div class="entry-details">
+                            <h4>B.S. in Geographic Information Science</h4>
+                            <p class="organization">University of North Alabama</p>
+                            <p class="courses">Honors: Summa cum laude</p>
+                            <p class="courses">GIS, Web GIS, Physical Geography, Remote Sensing, Quant Method in Geography (SPSS), MySQL, Python</p>
+                        </div>
+                        <div class="entry-date">Dec 2022</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -316,12 +380,15 @@
     </body>
 
     <footer>
-        <p>&copy; 2024 My Portfolio All Rights Reserved</p>
+        <p>Copyright &copy; 2024 Zhiyi Li. All rights reserved.</p>
     </footer>
 
-    <script src="js/main.js"></script>
     <script type="javascript" src="lib/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
+
+<!-- 220516528358-0m0k2t296hohd20g926d687qlfni5eg9.apps.googleusercontent.com -->
 
 
 

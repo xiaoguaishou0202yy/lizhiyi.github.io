@@ -47,3 +47,14 @@ document.querySelectorAll('.zoomable').forEach(function (img) {
         img.style.cursor = currentScale > 1 ? 'move' : 'zoom-in';
     });
 });
+
+var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 4, 
+    spaceBetween: 30, 
+    loop: true, 
+  });
+  
