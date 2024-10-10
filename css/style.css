@@ -9,25 +9,41 @@ body {
 
 
 header {
+    position:fixed;
+    width:100%;
     display:flex;
     justify-content:space-between;
     text-align: center;
-    padding: 20px 50px;
-    background-color:#ec76b5
+    padding: 10px 40px;
+    background-color:#c746c7;
+    z-index: 1000; /* Ensure the header stays on top of other elements */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
 }
 /* #FF69B4 #2F2F2F*/
 
+/* Apply the same font styling to all links in the header */
+header a {
+    font-family: Arial, sans-serif; /* Set a consistent font */
+    font-size: 16px; /* Adjust the font size as needed */
+    color: black; /* Set a custom color */
+    text-decoration: none; /* Remove the underline */
+    padding: 0 10px; /* Optional: Add some padding for spacing */
+}
 
-.name {
-    font-size: 24px;
-    font-weight:bold;
-    margin: 0;
-} 
+/* Specific styling for the name link */
+.name a {
+    font-weight: bold; /* Make the name bold if desired */
+    font-size: 20px; /* Adjust the size of the name */
+    color: rgb(255, 255, 255); /* Set the color to black */
+    text-decoration: none; /* Remove the underline */
+}
+
+
 
 nav a {
     margin-left:20px;
     text-decoration:none;
-    color:#2d3436;
+    color:#ffffff;
 }
 
 
@@ -90,25 +106,30 @@ nav a {
 }
 
 .swiper-container {
-    width: 100%;
+    position: relative; /* This allows absolutely positioned children to be positioned relative to the container */
+    width: 80%;
     height: 100%;
+    margin:0 auto;
 }
+
   
 .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #2F2F2F;
     border: 1px solid #080808;
-    padding: 20px;
+    padding-top: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    height:max-content
+    height:auto
 }
   
 .swiper-slide img {
     width: 100%;
-    height: 80%;
-    border-radius: 8px;
+    height: 200px;
+    object-fit:cover;
+    display:block;
+    /* border-radius: 8px; */
 }
 
 
@@ -117,17 +138,13 @@ nav a {
     font-size: 1.2rem; /* Adjust the size */
     color: #eeaff5; /* Adjust text color */
     text-align: center; /* Center align the text */
-    padding:20px;
+    padding:2px;
 }
 
 .swiper-slide:hover {
     transform: translateY(-5px);
 }
 
-/* Ensure the slider container has relative positioning */
-.swiper-container {
-    position: relative; /* This allows absolutely positioned children to be positioned relative to the container */
-  }
   
   /* Style and position for both navigation buttons */
   .swiper-button-next, .swiper-button-prev {
@@ -143,12 +160,12 @@ nav a {
   
   /* Position the left (prev) button inside the slider */
   .swiper-button-prev {
-    left: 10px; /* 10px from the left edge of the slider */
+    left: -50px; /* 10px from the left edge of the slider */
   }
   
   /* Position the right (next) button inside the slider */
   .swiper-button-next {
-    right: 10px; /* 10px from the right edge of the slider */
+    right: -50px; /* 10px from the right edge of the slider */
   }
   
   /* Customize the arrow icons inside the buttons */
@@ -167,7 +184,7 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
-    height:max-content
+    height:max-content;
 }
 
 .portfolio .map p {
@@ -192,9 +209,9 @@ nav a {
 
 #resume {
     padding: 40px;
-    max-width: 800px;
+    width:80%;
     margin: 0 auto;
-    background-color: #2C2F33;
+    background-color: #080808;
     color:white;
 
 }
@@ -265,49 +282,23 @@ nav a {
     content: "\1F393"; /* You can replace this with an appropriate icon code */
 }
 
+.download-btn {
+    background-color: #ec76b5; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px;
+    align-items:center;
+}
+
+.download-btn:hover {
+    background-color: #a04777; /* Darker green on hover */
+}
+
+
   
-
-
-/* Mobile First Responsiveness */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        margin-top: 20px;
-    }
-
-    .content {
-        flex-direction: column;
-    }
-
-    .text-content, .image-content {
-        width: 100%;
-    }
-
-    .image-content {
-        margin-top: 30px;
-    }
-
-    .portfolio .map {
-        width: 100%;
-    }
-}
-
-@media (min-width: 769px) {
-    .portfolio .map {
-        width: 45%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .portfolio .map {
-        width: 20%;
-    }
-}
-
 
 /* Modal (hidden by default) */
 .modal {
