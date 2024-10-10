@@ -391,6 +391,8 @@ html {
 
     .image-content {
         margin-top: 20px; /* Add spacing between text and image */
+        width:60%;
+        align-items:center;
     }
 }
 
