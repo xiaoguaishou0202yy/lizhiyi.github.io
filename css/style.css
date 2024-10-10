@@ -76,6 +76,8 @@ nav a {
 .intro p {
     font-size: 1.25rem;
     color: #bfb8bd;
+    padding-top:10px;
+    padding-bottom:20px;
 }
 
 .portfolio p {
@@ -88,23 +90,31 @@ nav a {
     flex-direction: row; /* Default is row (side by side) */
     justify-content: space-between;
     align-items: center;
+    position:relative;
+    width:100%;
 }
 
 .text-content {
-    flex:1;
+    position:relative;
+    /* flex:1; */
     margin:80px;
+    width:60%;
+    z-index:2;
 }
 
 .image-content {
-    width: 40%;
+    position:relative;
+    width: 50%;
     max-width:100%;
+    z-index:1;
+    left: -40px; /* Shift the image to the left to overlap the text */
 }
 
 
 .image-content img {
-    width:100%;
-    border-radius: 10px;
+    width:50%;
     height:20%;
+    object-fit:cover;
 }
 
 
@@ -132,7 +142,7 @@ nav a {
 .swiper-container-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1200px; /* Adjust this value as needed */
+
     margin: 0 auto;
     padding: 0 50px; /* Make room for the buttons */
 }
@@ -198,18 +208,18 @@ nav a {
 
   /* First Swiper buttons */
 .swiper-button-prev1 {
-    left: 10px; /* Adjust the left position as needed */
+    left: 70px; /* Adjust the left position as needed */
 }
 .swiper-button-next1 {
-    right: 10px; /* Adjust the right position as needed */
+    right: 70px; /* Adjust the right position as needed */
 }
 
 /* Second Swiper buttons */
 .swiper-button-prev2 {
-    left: 10px; /* Adjust the left position for the second swiper */
+    left: 70px; /* Adjust the left position for the second swiper */
 }
 .swiper-button-next2 {
-    right: 10px; /* Adjust the right position for the second swiper */
+    right: 70px; /* Adjust the right position for the second swiper */
 }
   
   /* Customize the arrow icons inside the buttons */
