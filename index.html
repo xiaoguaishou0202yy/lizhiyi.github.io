@@ -6,21 +6,21 @@
         <title>Zhiyi Li - Portfolio</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
        
     </head>
+    
     <body>
         <header>
             
             <div class="name">
-                <a href="#intro">Zhiyi Li</a>
+                <a href="#intro"><p>Zhiyi Li</p></a>
             </div>
 
             <nav>
-                <a href="#portfolio">
-                    <button type="button" class="btn btn-outline-primary">Portfolio</button>
-                </a>
+
+                <a href="#portfolio">Portfolio</a>
                 <a href="#resume">Resume</a>
                 <a href="#contact">Contact</a>
 
@@ -31,13 +31,16 @@
 
         <section class="intro" id="intro">
 
+
             <div class="content">
                 <div class="text-content">
+
                     <h1>I'M Zhiyi Li</h1>
                     <br>
                     <h2>GIS Analyst & Map Maker</h2>
                     <p>Originally from Suzhou, China, I have had passion for creating maps and conducting GIS analysis, particularly in the areas of natural disasters and urban health. I hold a Master’s degree in Cartography and Geographic Information Systems from the University of Wisconsin – Madison, where I developed expertise in spatial data analysis, geovisualization, and GIS programming. My research experience includes studying the impacts of natural disasters, as well as exploring urban health issues such as air quality and community safety.</p>
-                    <button class="cta-btn">LET'S TALK</button>
+
+                    <button type="button" class="btn btn-primary btn-lg">LET'S TALK</button>
 
                 </div>
                 <div class="image-content">
@@ -45,16 +48,21 @@
                 </div>
             </div>
 
+        </section>
+
+        
+        
+        <section class="portfolio" id="portfolio">
 
             <h2>WELCOME TO MY PORTFOLIO</h2>
             <p>BELOW YOU CAN FIND A SELECTION OF SOME OF MY MAPS</p>
-        </section>
-
-        <section class="portfolio" id="portfolio">
-            <div class="subtitle1"> Print Cartography</div>
+            <div class="subtitle1"> 
+                <h3>Print Cartography</h3>
+            </div>
 
             <div class="swiper-container">
                 <div class="swiper-wrapper">
+                    
                     <div class="swiper-slide">
                         <p>California Wildfires in the 21st Century</p>
                         <img src="img/Info.png" alt="Info Map on California Wildfires">
@@ -113,7 +121,9 @@
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <div class="subtitle1"> Web Cartography</div>
+            <div class="subtitle1"> 
+                <h3>Web Cartography</h3>
+            </div>
 
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -345,12 +355,12 @@
               
         </section> -->
 
-        <section id="resume">
+        <section class="resume" id="resume">
             <h2>Resume</h2>
             
             <div class="resume-section">
                 <div class="section-header">
-                    <i class="icon-experience"></i>
+<!--                     <i class="icon-experience"></i> -->
                     <h3>Work Experience</h3>
                 </div>
                 <div class="entry-details">
@@ -360,7 +370,7 @@
                             <p class="organization">Madison Police Department</p>
                             <p> Helped develop a public GIS interactive tool for 911 data query using ESRI Experience Builder, improving response efficiency and community safety</p>
                         </div>
-                        <div class="entry-date">Jul 2020 - Aug 2020</div>
+                        <div class="entry-date">June 2024 - Aug 2024</div>
                     </div>
                     <div class="resume-entry">
                         <div class="entry-details">
@@ -369,14 +379,14 @@
                             <p>Handled the recruitment process for structural and software test engineer positions, including job postings and screening candidates;</p>
                             <p>Supported the interview process by coordinating schedules and assisting with candidate evaluation</p>
                         </div>
-                        <div class="entry-date">MAY 2015 - AUGUST 2015</div>
+                        <div class="entry-date">Jul 2020 - Aug 2020</div>
                     </div>
                 </div>
             </div>
     
             <div class="resume-section">
                 <div class="section-header">
-                    <i class="icon-education"></i>
+                    <!-- <i class="icon-education"></i> -->
                     <h3>Education</h3>
                 </div>
                 <div class="entry-details">
@@ -399,15 +409,13 @@
                         <div class="entry-date">Dec 2022</div>
                     </div>
                 </div>
+         
+            </div>
 
-
-                <div class="download-resume">
-                    <a href="data/CV_Zhiyi_Li.pdf" download="CV_Zhiyi_Li.pdf">
-                        <button class="download-btn">Download Resume</button>
-                    </a>
-                </div>
-
-                
+            <div class="download-resume">
+                <a href="data/CV_Zhiyi_Li.pdf" download="CV_Zhiyi_Li.pdf">
+                    <button type="button" class="btn btn-primary btn-lg">Download Resume</button>
+                </a>
             </div>
         </section>
 
