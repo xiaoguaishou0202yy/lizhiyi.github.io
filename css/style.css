@@ -85,16 +85,19 @@ nav a {
 
 .content {
     display: flex;
+    flex-direction: row; /* Default is row (side by side) */
     justify-content: space-between;
     align-items: center;
 }
 
 .text-content {
-    width: 50%;
+    flex:1;
+    margin:80px;
 }
 
 .image-content {
     width: 40%;
+    max-width:100%;
 }
 
 
@@ -190,7 +193,6 @@ nav a {
     color: white; /* White arrow icon */
     font-size: 20px; /* Adjust the size of the arrow */
   }
-  
   
 
 
@@ -294,15 +296,6 @@ nav a {
     font-style: italic;
 }
 
-/* Icons */
-.icon-experience::before {
-    content: "\1F4C8"; /* You can replace this with an appropriate icon code */
-}
-
-.icon-education::before {
-    content: "\1F393"; /* You can replace this with an appropriate icon code */
-}
-
 .download-resume {
     display:flex;
     align-items:center;
@@ -354,6 +347,17 @@ nav a {
 
 html {
     scroll-padding-top: 60px; /* Adjust this value to match the height of your header */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack text and image vertically */
+    }
+
+    .image-content {
+        margin-top: 20px; /* Add spacing between text and image */
+    }
 }
 
 
