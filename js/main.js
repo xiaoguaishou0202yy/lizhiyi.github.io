@@ -1,5 +1,3 @@
-import 'bootswatch/dist/sketchy/bootstrap.min.css'; // Added this :boom:
-
 // Variables to track panning state and coordinates
 let currentScale = 1;  // Initial scale of the image
 let isPanning = false; // Track whether the user is panning
