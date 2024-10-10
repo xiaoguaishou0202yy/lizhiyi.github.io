@@ -104,6 +104,7 @@ nav a {
 .image-content img {
     width:100%;
     border-radius: 10px;
+    height:20%;
 }
 
 
@@ -126,12 +127,24 @@ nav a {
     display: block;       /* Ensure it stays on its own line */
 }
 
+
+
+.swiper-container-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto;
+    padding: 0 50px; /* Make room for the buttons */
+}
+
 .swiper-container {
     position: relative; /* This allows absolutely positioned children to be positioned relative to the container */
     width: 80%;
     height: 100%;
     margin:0 auto;
+    overflow:hidden;
 }
+
 
   
 .swiper-slide {
@@ -142,7 +155,10 @@ nav a {
     padding-top: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    height:auto
+    height:auto;
+
+    width: 100%; /* This ensures that each slide takes full width of the swiper container */
+
 }
   
 .swiper-slide img {
@@ -175,18 +191,26 @@ nav a {
     height: 40px;
     background-color: #ec76b5; /* Semi-transparent background for the buttons */
     border-radius: 50%; /* Make buttons circular */
-    z-index: 10; /* Ensure the buttons are above other elements */
+    z-index: 999; /* Ensure the buttons are above other elements */
+    padding:10px;
   }
   
-  /* Position the left (prev) button inside the slider */
-  .swiper-button-prev {
-    left: -50px; /* 10px from the left edge of the slider */
-  }
-  
-  /* Position the right (next) button inside the slider */
-  .swiper-button-next {
-    right: -50px; /* 10px from the right edge of the slider */
-  }
+
+  /* First Swiper buttons */
+.swiper-button-prev1 {
+    left: 10px; /* Adjust the left position as needed */
+}
+.swiper-button-next1 {
+    right: 10px; /* Adjust the right position as needed */
+}
+
+/* Second Swiper buttons */
+.swiper-button-prev2 {
+    left: 10px; /* Adjust the left position for the second swiper */
+}
+.swiper-button-next2 {
+    right: 10px; /* Adjust the right position for the second swiper */
+}
   
   /* Customize the arrow icons inside the buttons */
   .swiper-button-next::after, .swiper-button-prev::after {
